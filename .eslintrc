@@ -1,0 +1,46 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true,
+		"jest": true
+	},
+	"globals": {
+		"arguments": true
+	},
+	"extends": ["react-app", "airbnb", "prettier", "prettier/react"],
+	"plugins": ["react", "jsx-a11y", "import", "prettier"],
+	"rules": {
+		"jsx-a11y/href-no-hash": 0,
+		"jsx-a11y/anchor-is-valid": "off",
+		"react/prop-types": 0,
+		"prettier/prettier": [
+			"error",
+			{
+				"trailingComma": "es5",
+				"singleQuote": true
+			}
+		],
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+		"linebreak-style": [0, "error", "windows"],
+		"global-require": "off",
+		"no-unused-expressions": "off",
+		"no-unused-vars": "off",
+		"no-useless-constructor": "off",
+		"no-use-before-define": "off",
+		"no-console": "off",
+		"no-param-reassign": "off",
+		"react/destructuring-assignment": "off",
+		"react/no-render-return-value": "off",
+		"react/react-in-jsx-scope": "off"
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"impliedStrict": true
+		}
+	}
+}
