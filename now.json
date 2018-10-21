@@ -1,0 +1,7 @@
+{
+	"name": "namlee_blog",
+	"alias": "namlee_blog",
+	"env": {
+		"NODE_ENV": "production"
+	}
+}

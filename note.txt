@@ -1,0 +1,5 @@
+mutation {
+  newPost (createdDate: "2018/08/22", title: "Nam test", author: "namlee", content: "Content test", tag:"tag test") {
+    title
+  }
+}

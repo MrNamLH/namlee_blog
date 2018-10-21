@@ -5,7 +5,7 @@ import NextHead from 'next/head';
 const PageHead = props => (
 	<NextHead>
 		<meta charSet="UTF-8" />
-		<title>{props.title || ''}</title>
+		<title>{props.title}</title>
 		<meta name="description" content={props.description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
@@ -14,7 +14,7 @@ const PageHead = props => (
 		<link rel="icon" href="/static/favicon.ico" />
 		<link rel="stylesheet" href="/_next/static/style.css" />
 		<meta property="og:url" content={props.url} />
-		<meta property="og:title" content={props.title || ''} />
+		<meta property="og:title" content={props.title} />
 		<meta property="og:description" content={props.description} />
 		<meta name="twitter:site" content={props.url} />
 		<meta name="twitter:card" content="summary_large_image" />

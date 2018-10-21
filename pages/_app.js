@@ -4,7 +4,12 @@ import { Provider } from 'react-redux';
 import withReduxStore from '../lib/with-redux-store';
 
 class MyApp extends App {
-	// debugger;
+	componentDidCatch(error, errorInfo) {
+		console.log('CUSTOM ERROR HANDLING', error);
+
+		// This is needed to render errors correctly in development / production
+		super.componentDidCatch(error, errorInfo);
+	}
 
 	render() {
 		const { Component, pageProps, reduxStore } = this.props;

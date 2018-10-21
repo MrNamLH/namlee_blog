@@ -6,18 +6,14 @@ import Layout from '../components/layout';
 import PostContainer from '../components/PostsContainer';
 import Nav from '../components/nav';
 import Examples from '../components/examples';
+import '../static/index.scss';
 
 class Index extends React.Component {
 	componentDidMount() {
 		const { dispatch } = this.props;
 	}
 
-	componentWillUnmount() {
-		console.log(`++++++++++++ componentWillUnmount : ${Object.keys(this.state)}`);
-	}
-
 	static getInitialProps({ reduxStore, req }) {
-		// debugger;
 		const isServer = !!req;
 		reduxStore.dispatch(loadAllPosts());
 
@@ -25,15 +21,15 @@ class Index extends React.Component {
 	}
 
 	render() {
-		// debugger;
 		console.log(this.props);
 		return (
 			<div>
-				<Layout title="NamLee Blog">
+				<Layout>
 					<Examples />
 				</Layout>
 			</div>
 		);
 	}
 }
+
 export default connect()(Index);

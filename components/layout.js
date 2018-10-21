@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Affix, BackTop } from 'antd';
 
-import PageHead from './head';
+import PageHead from './page_head';
 import Nav from './nav';
 import Main from './Main';
 import Footer from './footer';

@@ -18,8 +18,6 @@ export default (state = initialState, action) => {
 				post: action.post,
 			};
 		default:
-			return {
-				state,
-			};
+			return state;
 	}
 };

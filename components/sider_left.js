@@ -20,10 +20,10 @@ class siderLeft extends React.Component {
 				</div>
 				<style jsx>{`
 					.icon {
-						vertical-align: 'middle',
-						font-size: 22,
-						color: '#08c',
-						padding-right: '5px'
+						vertical-align: 'middle';
+						//font-size: 22,
+						//color: red,
+						//padding-right: '5px'
 					}
 				`}</style>
 			</div>

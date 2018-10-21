@@ -10,7 +10,7 @@
 		],
 		"block-closing-brace-space-before": null,
 		"color-named": "never",
-		"color-no-hex": true,
+		"color-no-hex": null,
 		"declaration-block-no-duplicate-properties": true,
 		"declaration-block-semicolon-space-after": null,
 		"declaration-block-single-line-max-declarations": 3,
@@ -19,11 +19,22 @@
 		"max-empty-lines": 5,
 		"max-nesting-depth": 5,
 		"number-no-trailing-zeros": null,
-		"selector-class-pattern": "^[a-z]+(?:-[a-z0-9]+)*(?:__[a-z0-9\\-]+){0,2}(?:--[a-z0-9\\-]+)?$",
+		"selector-class-pattern": [
+			"^[a-z]+(?:-[a-z0-9]+)*(?:__[a-z0-9\\-]+){0,2}(?:--[a-z0-9\\-]+)?$",
+			{
+				"resolveNestedSelectors": true
+			}
+		],
 		"selector-list-comma-newline-after": null,
 		"shorthand-property-no-redundant-values": null,
 		"string-quotes": "single",
-		"selector-max-id": 0
+		"selector-max-id": 0,
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": ["function", "if", "each", "for", "include", "mixin"]
+			}
+		]
 	},
-	"ignoreFiles": ["src/styles/_normalize-5.0.0.scss"]
+	"ignoreFiles": ["src/static/_normalize-5.0.0.scss"]
 }
